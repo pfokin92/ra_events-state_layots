@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.Store {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.CardsView {
+    display: flex;
+    flex-wrap: wrap;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .IconSwitch {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 15px 15px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .IconSwitch-button {
+    color: grey;
+    cursor: pointer;
   }
-}
+  
+  .IconSwitch-button .material-icons {
+    font-size: 36px;
+  }
+  
+  .ShopCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin: 20px 50px;
+    background-size: 300px 300px;
+    box-shadow: 0 8px 13px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  
+  .ShopCard-name {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    transform: scale(0.9, 1.4);
+  }
+  
+  .ShopCard-color {
+    font-size: 16px;
+  }
+  
+  .ShopCard-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 175px;
+    color: rgb(161, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .ShopCard-price {
+    font-weight: lighter;
+    font-size: 18px;
+  }
+
+  .ShopCard-button {
+    padding: 5px 10px;
+    border: 2px solid rgb(161, 0, 0);
+    border-radius: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .ListView {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ShopItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: whitesmoke;
+  }
+  
+  .ShopItem-img {
+    width: 150px;
+    height: 80px;
+    background-size: 150px 150px;
+    background-position: 50% 70%;
+  }
+  
+  .ShopItem-name {
+    font-size: 24px;
+    text-transform: uppercase;
+    transform: scale(0.9, 1.4);
+  }
+  
+  .ShopItem-price {
+    color: rgb(161, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .ShopItem-button {
+    margin-right: 15px;
+    padding: 5px 10px;
+    border: 2px solid rgb(161, 0, 0);
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: rgb(161, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
